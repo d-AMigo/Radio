@@ -10,13 +10,13 @@ public class RadioTest {
 
     @Test
     public void setMaxStation(){
-        Radio radio = new Radio(13);
+        radio.setMaxStation(13);
         assertEquals(13, radio.getMaxStation());
     }
 
     @Test
     public void increaseWithNewMaxStation(){
-        Radio radio = new Radio(13);
+        radio.setMaxStation(13);
         radio.setCurrentStation(10);
         radio.increaseCurrentStation();
         assertEquals(11, radio.getCurrentStation());
